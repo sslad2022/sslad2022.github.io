@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Challenge | The 2nd Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving </title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+  <link rel="stylesheet" href="../theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../theme/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="../theme/css/style.css">
+  <link rel="stylesheet" href="../theme/css/custom.css">
+  <link href="../theme/fonts/icomoon/style.css" rel="stylesheet">
+  <link href="../theme/css2/style.css" rel="stylesheet">
+
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-88572407-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10">
+          <h1 class="title" style="width:950px">
+            <a href="../index.html">
+              The 2nd Workshop on Self-supervised Learning for Next-Generation Industry-level Autonomous Driving
+            </a>
+
+          </h1>
+          <br />
+          <ul class="list-inline" style="width:max-content">
+            <li class="list-inline-item"><a href="../index.html">Home</a></li>
+            <li class="list-inline-item"><a href="../pages/call-for-participation.html">Call for Submissions</a></li>
+            <li class="list-inline-item"><a href="../pages/schedule.html">Schedule</a></li>
+            <li class="list-inline-item"><a href="../pages/speakers.html">Speakers</a></li>
+            <li class="list-inline-item"><a href="../pages/organizers.html">Organizers</a></li>
+            <li class="list-inline-item"><a href="../pages/Program Committee.html">Program Committee</a></li>
+            <li class="list-inline-item"><a href="../pages/challenge.html">Challenge</a></li>
+            <li class="list-inline-item"><a href="../pages/Accepted Paper.html">Accepted Papers</a></li>
+            <li class="list-inline-item"><a href="https://sslad2021.github.io/index.html">2021</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <br />
+  <br />
+  <div class="site-section">
+    <div class="container">
+      <div class="row middle">
+        <div class="col-lg-12" id="challenge1">
+          <div class="section-title">
+            <h1>Track1</h1>
+            <h4>2D object detection</h4>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                For 2D object detection, we provide a real-word training dataset with 10 million images of which 5K are labeled and with 5K/10K validation/testing labeled images for evaluation. This dataset has been collected throughout diverse scenarios in cities in China and contains scenes in a wide variety of places, objects and weather conditions such as highways, city streets, country roads, rainy weather, also different cameras / camera setups.
+              </p>
+
+              <ul>
+                <li><strong>Evaluation:</strong> Leaderboard ranking for this track is by Mean Average Precision(mAP) among all categories, that is, the mean over the APs of pedestrian, cyclist, car, truck, tram and tricycle. The IoU overlap threshold for pedestrian, cyclist, tricycle is set to 0.5, and for car, truck, tram is set to 0.7. Only camera images of SODA10M are allowed to be used.</li>
+                <li><strong>Dataset: </strong> Please refer to <a href="https://soda-2d.github.io/"> SODA-2d </a> for detailed dataset introduction and dataset downloads. <br /></li>
+                <li><strong>Submission: TBD </strong>.</li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="challenge2">
+          <div class="section-title">
+            <br />
+            <h1>Track2</h1>
+            <h4>Multi-modality 3D object detection</h4>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                Awaiting details...
+              </p>
+
+              <ul>
+                <li><strong>Evaluation:</strong> TBD </li>
+                <li><strong>Dataset: </strong> TBD. </li>
+                <li><strong>Submission: </strong> TBD. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="challenge3">
+          <div class="section-title">
+            <br />
+            <h1>Track3</h1>
+            <h4>Corner Case detection</h4>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                For corner case detection, 3D object detection and the unified model for multi-task benchmark, we provide a large-scale training set with 1 million video frames with multi-modality information in which 5K frames are extensively labeled. Validation and test contain 3K and 8K labeled frames for evaluation. Each frame of the data consists of 1 Lidar and 7 images, extracted through multiple driving scenes in China at a frame rate of 1 fps. Data from the validation/test sets are extracted from independent scenes to ensure that no continuous frames appear in the training set. We already got 3D bounding boxes for classes of pedestrian, cyclist, car, truck and bus last year. This year we will add new annotations of 3D lane lines as well as road segmentation in these labeled frames.
+              </p>
+
+              <ul>
+                <li><strong>Evaluation:</strong> TBD </li>
+                <li><strong>Dataset: </strong> TBD.</li>
+                <li><strong>Submission: </strong> TBD.</li>>
+              </ul>
+            </div>
+          </div>>
+        </div>
+
+        <div class="col-lg-12" id="challenge4">
+          <div class="section-title">
+            <br />
+            <h1>Track4</h1>
+            <h4>Multiple object tracking and segmentation</h4>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                For multiple object tracking (MOT), we extract the video frames from the BDD100K dataset, which contains 100K unlabeled videos and 1,400/200/400 labeled videos for train/val/test. The labeled part contains 160K instances, 4M objects. BDD100K has been collected throughout diverse scenarios, covering New York, San Francisco Bay Area, and other regions in the US. It contains scenes in a wide variety of locations, weather conditions and day time periods, such as highways, city streets, residential areas, rainy/snowy weathers, etc. Each video is 40-second long and 30fps. For segmentation tracking (MOTS), we use 100K unlabeled videos and 154/32/37 labeled videos for train/val/test. The labeled parts contain 25K instances and 480K masks, which are the segmentation tracking videos of BDD100K. We hope the utilization of large-scale unlabeled video data in self-driving could further boost the performance of MOT & MOTS.
+              </p>
+
+              <ul>
+                <li><strong>Evaluation:</strong> TBD </li>
+                <li><strong>Dataset: </strong> TBD.
+                </li>
+                <li><strong>Submission: </strong> TBD.
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="challenge5">
+          <div class="section-title">
+            <br />
+            <h1>Track5</h1>
+            <h4>Unified model for multi-task benchmark</h4>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                Awaiting details...
+              </p>
+
+              <ul>
+                <li><strong>Evaluation:</strong> TBD </li>
+                <li><strong>Dataset: </strong> TBD. </li>
+                <li><strong>Submission: </strong> TBD. </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12" id="awards">
+          <br />
+          <div class="section-title">
+            <h2>CHALLENGE PRIZES: (TOTAL 100,000 USD)</h2>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>
+                Challenge participants with the most successful and innovative entries will be invited to present at this workshop and will receive awards. There are 20,000 USD cash prize for each track. A 10,000 USD cash prize will be awarded to the top performers in each task and 2nd and 3rd places will be awarded with 5 000 USD each.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- References -->
+        <div class="col-lg-12" id="reference">
+        <br />
+          <div class="section-title">
+            <h2>References</h2>
+          </div>
+          <div class="trend-entry d-flex">
+            <div class="trend-contents">
+              <p>[1] Han J, Liang X, Xu H, et al. SODA10M: Towards Large-Scale Object Detection Benchmark for Autonomous Driving[J]. arXiv preprint arXiv:2106.11118, 2021.</p>
+              <p>[2] Mao J, Niu M, Jiang C, et al. One Million Scenes for Autonomous Driving: ONCE Dataset[J]. arXiv preprint arXiv:2106.11037, 
+            </div>
+          </div>
+        </div>
+
+        <!-- Spanner Area Start-->
+        <div class="col-lg-12 with-img" id="spanner">
+          <br />
+          <div class="section-title">
+            <h2>Sponsor</h2>
+          </div>
+          <div class="trend-entry d-flex" style="background-color: green;">
+            <!-- pic No.2 -->
+            <div class="col-xs-6 col-md-4 spanner-pic-box">
+              <div class="thumbnail">
+                <a href="https://www.huawei.com/cn/">
+                  <img src="../images/sponsor/huawei.png" alt="Huawei"
+                    class="spanner-img" align="center">
+                  <div>
+                    <h5>Huawei</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-md-4 spanner-pic-box">
+              <div class="thumbnail">
+                <a href="http://www.sysu.edu.cn/cn/index.htm">
+                  <img src="../images/sponsor/sysu.jpeg" alt="Sun Yat-sen University" style="height: 100px", align="center">
+                  <div>
+                    <h5>Sun Yat-sen University</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-xs-6 col-md-4 spanner-pic-box">
+              <div class="thumbnail">
+                <a href="https://www.noahlab.com.hk/#/home">
+                  <img src="../images/sponsor/noah.png" alt="Noah's Ark LAB" style="height: 100px", align="center">
+                  <div>
+                    <h5>NOAH'S ARK LAB</h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+
+  </div>
+  <!-- .site-wrap -->
+  <!-- loader -->
+  <div class="show fullscreen" id="loader">
+    <svg class="circular" height="48px" width="48px">
+      <circle class="path-bg" cx="24" cy="24" fill="none" r="22" stroke="#eeeeee" stroke-width="4" />
+      <circle class="path" cx="24" cy="24" fill="none" r="22" stroke="#ff5e15" stroke-miterlimit="10"
+        stroke-width="4" />
+    </svg>
+  </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script>
+                All rights reserved | This template is made with <i aria-hidden="true"
+                  class="icon-heart text-danger"></i> by
+                <a href="https://colorlib.com" target="_blank" style="text-decoration: none;">Colorlib</a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <script src="../theme/js/jquery-3.3.1.min.js"></script>
+  <script src="../theme/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="../theme/js/jquery-ui.js"></script>
+  <script src="../theme/js/popper.min.js"></script>
+  <script src="../theme/js/bootstrap.min.js"></script>
+  <script src="../theme/js/owl.carousel.min.js"></script>
+  <script src="../theme/js/jquery.stellar.min.js"></script>
+  <script src="../theme/js/jquery.countdown.min.js"></script>
+  <script src="../theme/js/bootstrap-datepicker.min.js"></script>
+  <script src="../theme/js/jquery.easing.1.3.js"></script>
+  <script src="../theme/js/aos.js"></script>
+  <script src="../theme/js/jquery.fancybox.min.js"></script>
+  <script src="../theme/js/jquery.sticky.js"></script>
+  <script src="../theme/js/jquery.mb.YTPlayer.min.js"></script>
+
+
+  <script src="../theme/js/main.js"></script>
+
+</body>
+
+</html>
