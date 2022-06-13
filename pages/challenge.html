@@ -109,17 +109,20 @@
           <div class="section-title">
             <br />
             <h1>Track3</h1>
-            <h4>Corner Case detection</h4>
+            <h4>Corner Case Detection</h4>
           </div>
           <div class="trend-entry d-flex">
             <div class="trend-contents">
               <p>
-                For corner case detection, 3D object detection and the unified model for multi-task benchmark, we provide a large-scale training set with 1 million video frames with multi-modality information in which 5K frames are extensively labeled. Validation and test contain 3K and 8K labeled frames for evaluation. Each frame of the data consists of 1 Lidar and 7 images, extracted through multiple driving scenes in China at a frame rate of 1 fps. Data from the validation/test sets are extracted from independent scenes to ensure that no continuous frames appear in the training set. We already got 3D bounding boxes for classes of pedestrian, cyclist, car, truck and bus last year. This year we will add new annotations of 3D lane lines as well as road segmentation in these labeled frames.
+                Deep learning has achieved prominent success in detecting common traffic participants (e.g., cars, pedestrians, and cyclists). Such detectors, however, are generally incapable of detecting novel objects that are not seen or rarely seen in the training process, generally called (object-level) corner cases, which consist of two categories, namely 1) instance of novel class (e.g., a runaway tire) and 2) novel instance of common class (e.g., an overturned truck). Properly dealing with corner cases has become the essential key to reliable autonomous driving perception systems.
+              </p>
+              <p>
+                We provide a real-word training dataset with 10 million images of which 5K are labeled and with 5K/10K validation/testing labeled images for evaluation. This dataset has been collected throughout diverse scenarios in cities in China and contains scenes in a wide variety of places, objects and weather conditions such as highways, city streets, country roads, rainy weather, also different cameras / camera setups.
               </p>
 
               <ul>
-                <li><strong>Evaluation:</strong> TBD </li>
-                <li><strong>Dataset: </strong> TBD.</li>
+                <li><strong>Evaluation:</strong> We utilize the COCO-style average recall as the evaluation metrics. </li>
+                <li><strong>Dataset: </strong> Please refer to SODA-2d for detailed dataset introduction and dataset downloads.</li>
                 <li><strong>Submission: </strong> TBD.</li>>
               </ul>
             </div>
