@@ -192,3 +192,15 @@ body {
 .thumbnail a:hover{
    text-decoration: none;
 }
+
+.caption{
+   margin-top: 10px;
+}
+
+.caption a{
+   color: rgb(124, 128, 129);
+}
+
+.affli {
+   line-height: 1.2em;
+}
