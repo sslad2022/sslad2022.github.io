@@ -133,14 +133,14 @@
           <div class="trend-entry d-flex">
             <div class="trend-contents">
               <p>
-                For multiple object tracking (MOT), we extract the video frames from the BDD100K dataset, which contains 100K unlabeled videos and 1,400/200/400 labeled videos for train/val/test. The labeled part contains 160K instances, 4M objects. BDD100K has been collected throughout diverse scenarios, covering New York, San Francisco Bay Area, and other regions in the US. It contains scenes in a wide variety of locations, weather conditions and day time periods, such as highways, city streets, residential areas, rainy/snowy weathers, etc. Each video is 40-second long and 30fps. For segmentation tracking (MOTS), we use 100K unlabeled videos and 154/32/37 labeled videos for train/val/test. The labeled parts contain 25K instances and 480K masks, which are the segmentation tracking videos of BDD100K. We hope the utilization of large-scale unlabeled video data in self-driving could further boost the performance of MOT & MOTS.
+                This is a large-scale tracking challenge under the most diverse driving conditions. Understanding the temporal association and shape of objects within videos is one of the fundamental yet challenging tasks for autonomous driving. The BDD100K MOT and MOTS datasets provides diverse driving scenarios with high quality instance segmentation masks under complicated occlusions and reappearing patterns, which serves as a great testbed for the reliability of the developed tracking and segmentation algorithms in real scenes. The BDD100K dataset also include 100K raw video sequences, which can be readily used for self-supervised learning. We hope the utilization of large-scale unlabeled video data in self-driving could further boost the performance of MOT & MOTS. In this challenge, we provide two tracks: (1) Main track - standard MOT and MOTS, and (2) Teaser track - self-supervised MOT and MOTS.
               </p>
 
               <ul>
-                <li><strong>Evaluation:</strong> TBD </li>
-                <li><strong>Dataset: </strong> TBD.
+                <li><strong>Evaluation:</strong> We use standard MOT and MOTS evaluation metrics. </li>
+                <li><strong>Dataset: </strong> Please refer to our [BDD100K Challenge Page](https://www.bdd100k.com/challenges/eccv2022/) for details regarding the dataset..
                 </li>
-                <li><strong>Submission: </strong> We will publish the challenge on <a href="">codalab</a> soon.</li>
+                <li><strong>Submission: </strong> TBD </li>
               </ul>
             </div>
           </div>
