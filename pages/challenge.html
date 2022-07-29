@@ -108,16 +108,27 @@
           <div class="trend-entry d-flex">
             <div class="trend-contents">
               <p>
-                Deep learning has achieved prominent success in detecting common traffic participants (e.g., cars, pedestrians, and cyclists). Such detectors, however, are generally incapable of detecting novel objects that are not seen or rarely seen in the training process, generally called (object-level) corner cases, which consist of two categories, namely 1) instance of novel class (e.g., a runaway tire) and 2) novel instance of common class (e.g., an overturned truck). Properly dealing with corner cases has become the essential key to reliable autonomous driving perception systems.
+                Deep learning has achieved prominent success in detecting common traffic participants (e.g., cars, pedestrians, and cyclists). Such detectors, however, are generally incapable of detecting novel objects that are not seen or rarely seen in the training process. These objects are called (object-level) corner cases, which consist of two categories, namely 1) instance of novel class (e.g., a runaway tire) and 2) novel instance of common class (e.g., an overturned truck). Properly dealing with corner cases has become one of the essential keys to reliable autonomous-driving perception systems. The aim of this challenge is to discover novel methods for detecting corner cases among common traffic participants in the real world.
               </p>
               <p>
-                We provide a real-word training dataset with 10 million images of which 5K are labeled and with 5K/10K validation/testing labeled images for evaluation. This dataset has been collected throughout diverse scenarios in cities in China and contains scenes in a wide variety of places, objects and weather conditions such as highways, city streets, country roads, rainy weather, also different cameras / camera setups.
+                For this challenge, we allow [SODA10M](https://soda-2d.github.io/), [ONCE](https://once-for-auto-driving.github.io/), and ImageNet-1k for training/pretraining. The evaluation will be conducted on the corner case dataset, CODA2022, which contains 9768 camera images with 80180 annotated objects spanning 43 object categories.
+              </p>
+              <p>
+                The first 7 categories (pedestrian, cyclist, car, truck, tram, tricycle, bus) are common categories, while the rest are novel categories.
               </p>
 
               <ul>
-                <li><strong>Evaluation:</strong> We utilize the COCO-style average recall as the evaluation metrics. </li>
-                <li><strong>Dataset: </strong> Please refer to <a href="https://soda-2d.github.io/"> SODA-2d </a> for detailed dataset introduction and dataset downloads.</li>
-                <li><strong>Submission: </strong>We will publish the challenge on <a href="">codalab</a> soon.</li>
+                <li><strong>Evaluation:</strong> For this task, we define a custom metric which is the sum of the four metrics as follows: 
+                  <ul>
+                    <li>AP-common: mAP over objects of common categories;</li>
+                    <li>AP-agnostic: mAP over objects of all categories in a class-agnostic manner;</li>
+                    <li>AR-agnostic: mAR over objects of all categories in a class-agnostic manner;</li>
+                    <li>AR-agnostic-corner: mAR over corner-case objects of all categories in a class-agnostic manner;</li>
+                  </ul>
+                  where mAP and mAR stand for mean Average Precison and mean Average Recall in COCO API.
+                </li>
+                <li><strong>Dataset: </strong> Please refer to <a href="https://soda-2d.github.io/">SODA10M</a> and <a href="https://once-for-auto-driving.github.io/">ONCE</a> for detailed dataset introduction and dataset downloads. CODA2022 can be downloaded on the submission page once the challenge begins.</li>
+                <li><strong>Submission: </strong> Please follow the instructions of the challenge published at <a href="https://codalab.lisn.upsaclay.fr/competitions/6639"> CodaLab Competitions</a>.</li>
               </ul>
             </div>
           </div>
